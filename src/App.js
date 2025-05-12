@@ -1,11 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import AuthWrapper from './Components/Auth/AuthWrapper';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <AuthWrapper />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gray-100">
+        <AuthWrapper />
+      </div>
+    </Router>
   );
 }
 
