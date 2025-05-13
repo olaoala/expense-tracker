@@ -1,19 +1,13 @@
 import React from 'react';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { FiShoppingCart } from 'react-icons/fi';
 import CalculationSection from './Calculation';
 import OptionalSection from './Optional';
 
-const COLORS = ['#00C49F', '#FFBB28'];
-const data = [
-  { name: 'Spent', value: 400 },
-  { name: 'Remaining', value: 600 }
-];
+
 
 const Dashboard = () => {
   const isMobile = window.innerWidth < 768;
 
-  const expenses = []; // Replace with real data if available
 
   return (
     <div className="min-h-screen bg-black text-white">
