@@ -1,6 +1,8 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'], // Make sure this line is correct for your setup
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Tells Tailwind where to look for class names
+  ],// Make sure this line is correct for your setup
   theme: {
     extend: {
       colors: {
