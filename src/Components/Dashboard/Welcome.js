@@ -50,6 +50,15 @@ const WelcomePage = () => {
             />
             <input
               type="text"
+              placeholder="Insert your Name"
+              value={income}
+              onChange={(e) => setIncome(e.target.value)}
+              className="bg-black border-b border-gray-400 py-2 px-1 placeholder-gray-400 focus:outline-none text-center"
+              onFocus={(e) => (e.target.placeholder = '')}
+              onBlur={(e) => (e.target.placeholder = 'Insert your Name')}
+            />
+            <input
+              type="text"
               placeholder="Insert your Goal"
               value={goal}
               onChange={(e) => setGoal(e.target.value)}

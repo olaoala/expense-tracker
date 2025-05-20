@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(login({ email })); // Fake login
+    dispatch(login({ email, password }));
   };
 
   return (
